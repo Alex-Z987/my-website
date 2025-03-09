@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Curriculum Roadmap</title>
+    <link rel="stylesheet" href="C:\Users\alexa\Documents\syllabus roadmap\style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Engineering Curriculum Roadmap</h1>
+        <div class="legend">
+            <div class="legend-item"><span class="status approved"></span> Approved Course</div>
+            <div class="legend-item"><span class="status in-progress"></span> In Progress</div>
+            <div class="legend-item"><span class="status failed"></span> Failed/Pending</div>
+            <div class="legend-item"><span class="status not-taken"></span> Not Taken</div>
+        </div>
+        
+        <div class="roadmap">
+            <!-- Semester 1 -->
+            <div class="semester">
+                <h2>Semester 1</h2>
+                <div class="course" id="MA1101" data-prereqs="">
+                    <div class="course-code">MA1101</div>
+                    <div class="course-name">Calculus I</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="CS1101" data-prereqs="">
+                    <div class="course-code">CS1101</div>
+                    <div class="course-name">Intro to Programming</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="PH1101" data-prereqs="">
+                    <div class="course-code">PH1101</div>
+                    <div class="course-name">Physics I</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="EN1101" data-prereqs="">
+                    <div class="course-code">EN1101</div>
+                    <div class="course-name">English Composition</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+
+            <!-- Semester 2 -->
+            <div class="semester">
+                <h2>Semester 2</h2>
+                <div class="course" id="MA1102" data-prereqs="MA1101">
+                    <div class="course-code">MA1102</div>
+                    <div class="course-name">Calculus II</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="CS1102" data-prereqs="CS1101">
+                    <div class="course-code">CS1102</div>
+                    <div class="course-name">Data Structures</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="PH1102" data-prereqs="PH1101">
+                    <div class="course-code">PH1102</div>
+                    <div class="course-name">Physics II</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="HU1101" data-prereqs="">
+                    <div class="course-code">HU1101</div>
+                    <div class="course-name">Humanities Elective</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+
+            <!-- Semester 3 -->
+            <div class="semester">
+                <h2>Semester 3</h2>
+                <div class="course" id="MA2101" data-prereqs="MA1102">
+                    <div class="course-code">MA2101</div>
+                    <div class="course-name">Linear Algebra</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="CS2101" data-prereqs="CS1102">
+                    <div class="course-code">CS2101</div>
+                    <div class="course-name">Algorithms</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="EE2101" data-prereqs="PH1102,MA1102">
+                    <div class="course-code">EE2101</div>
+                    <div class="course-name">Circuit Analysis</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="SS2101" data-prereqs="">
+                    <div class="course-code">SS2101</div>
+                    <div class="course-name">Social Sciences</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+
+            <!-- Semester 4 -->
+            <div class="semester">
+                <h2>Semester 4</h2>
+                <div class="course" id="MA2102" data-prereqs="MA2101,MA1102">
+                    <div class="course-code">MA2102</div>
+                    <div class="course-name">Differential Equations</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="CS2102" data-prereqs="CS2101">
+                    <div class="course-code">CS2102</div>
+                    <div class="course-name">Software Engineering</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="EE2102" data-prereqs="EE2101">
+                    <div class="course-code">EE2102</div>
+                    <div class="course-name">Digital Logic</div>
+                    <div class="credits">4 cr</div>
+                </div>
+                <div class="course" id="ME2101" data-prereqs="PH1102,MA1102">
+                    <div class="course-code">ME2101</div>
+                    <div class="course-name">Statics</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+
+            <!-- Semester 5 -->
+            <div class="semester">
+                <h2>Semester 5</h2>
+                <div class="course" id="EE3101" data-prereqs="EE2102,MA2102">
+                    <div class="course-code">EE3101</div>
+                    <div class="course-name">Signals and Systems</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="CS3101" data-prereqs="CS2102">
+                    <div class="course-code">CS3101</div>
+                    <div class="course-name">Database Systems</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="ME3101" data-prereqs="ME2101">
+                    <div class="course-code">ME3101</div>
+                    <div class="course-name">Dynamics</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="TE3101" data-prereqs="">
+                    <div class="course-code">TE3101</div>
+                    <div class="course-name">Technical Elective I</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+
+            <!-- Semester 6 -->
+            <div class="semester">
+                <h2>Semester 6</h2>
+                <div class="course" id="EE3102" data-prereqs="EE3101">
+                    <div class="course-code">EE3102</div>
+                    <div class="course-name">Control Systems</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="CS3102" data-prereqs="CS3101">
+                    <div class="course-code">CS3102</div>
+                    <div class="course-name">Operating Systems</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="ME3102" data-prereqs="ME3101">
+                    <div class="course-code">ME3102</div>
+                    <div class="course-name">Mechanics of Materials</div>
+                    <div class="credits">3 cr</div>
+                </div>
+                <div class="course" id="TE3102" data-prereqs="">
+                    <div class="course-code">TE3102</div>
+                    <div class="course-name">Technical Elective II</div>
+                    <div class="credits">3 cr</div>
+                </div>
+            </div>
+        </div>
+        
+        <svg id="arrows" class="arrows"></svg>
+    </div>
+
+    <script src="C:\Users\alexa\Documents\syllabus roadmap\script.js"></script>
+</body>
+</html>
