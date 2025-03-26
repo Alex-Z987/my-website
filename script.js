@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (key.toLowerCase().includes('co-requirement')) {
                     course.coreqs = value || '';
                 } else if (key.toLowerCase().includes('course semester')) {
-                    course.semester = parseInt(value) || 0;
+                    course.semester = parseInt(value) || 1;
                 }
             });
             
