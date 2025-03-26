@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (key.toLowerCase().includes('co-requirement')) {
                     course.coreqs = value || '';
                 } else if (key.toLowerCase().includes('course semester')) {
-                    course.semester = parseInt(value) || 1;
+                    course.semester = parseInt(value) || 0;
                 }
             });
             
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const maxSemester = Math.max(...courseData.map(course => course.semester));
         
         // Create semester containers
-        for (let i = 0; i <= maxSemester; i++) {
+        for (let i = 1; i <= maxSemester; i++) {
             const semesterDiv = document.createElement('div');
             semesterDiv.className = 'semester';
             semesterDiv.innerHTML = `<h3>Semester ${i}</h3>`;
