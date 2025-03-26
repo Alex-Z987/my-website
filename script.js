@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const maxSemester = Math.max(...courseData.map(course => course.semester));
         
         // Create semester containers
-        for (let i = 1; i <= maxSemester; i++) {
+        for (let i = 0; i <= maxSemester; i++) {
             const semesterDiv = document.createElement('div');
             semesterDiv.className = 'semester';
             semesterDiv.innerHTML = `<h3>Semester ${i}</h3>`;
